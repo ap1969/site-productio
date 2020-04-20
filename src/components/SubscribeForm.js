@@ -1,0 +1,27 @@
+import React from 'react';
+
+export default class SubscribeForm extends React.Component {
+    render() {
+        return (
+            <form name="subscribeForm" method="POST" netlifyHoneypot="bot-field" data-netlify="true" id="subscribe-form" className="subscribe-form">
+              <div className="screen-reader-text">
+                <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+              </div>
+              <div className="form-row">
+                <label>
+                  <span className="screen-reader-text">First name</span>
+                  <input className="subscribe-email" type="text" name="first-name" placeholder="Enter first name..."/>
+                </label>
+              </div>
+              <div className="form-row">
+                <label>
+                  <span className="screen-reader-text">Email address</span>
+                  <input className="subscribe-email" type="email" name="email" placeholder="Enter email address..."/>
+                </label>
+              </div>
+              <input type="hidden" name="form-name" value="subscribeForm" />
+              <button className="button" type="submit">Subscribe</button>
+            </form>
+        );
+    }
+}
