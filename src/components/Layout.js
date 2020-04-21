@@ -20,7 +20,7 @@ export default class Body extends React.Component {
         } else {
             title = _.get(this.props, 'pageContext.frontmatter.title') + ' - ' + _.get(this.props, 'pageContext.site.siteMetadata.title');
         }
-        console.log("Title 2: " + title);
+        console.log("Title 2a: " + title);
 
         return (
             <React.Fragment>
