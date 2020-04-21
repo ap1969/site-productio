@@ -209,6 +209,10 @@ models:
         label: Title
         description: The title of the post
         required: true
+      - type: boolean
+        name: draft
+        label: Draft?
+        description: Enable to save this post as a draft
       - type: string
         name: subtitle
         label: Subtitle
