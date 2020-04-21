@@ -211,7 +211,7 @@ models:
         required: true
       - type: boolean
         name: draft
-        label: Draft?
+        label: Draft
         description: Enable to save this post as a draft
       - type: string
         name: subtitle

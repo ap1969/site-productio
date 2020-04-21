@@ -14,7 +14,7 @@ export default {
             "title": "Draft?",
             "name": "draft",
             "type": "boolean"
-}
+        },
         {
             "type": "string",
             "name": "subtitle",
