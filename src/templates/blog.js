@@ -8,7 +8,6 @@ import {getPages, Link, safePrefix} from '../utils';
 export default class Blog extends React.Component {
     render() {
         let display_posts = _.orderBy(getPages(this.props.pageContext.pages, '/posts', true), 'frontmatter.date', 'desc');
-        console.log(display_posts);
         return (
             <Layout {...this.props}>
             <div className="outer">
