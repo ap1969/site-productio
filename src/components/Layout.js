@@ -8,19 +8,19 @@ import Footer from './Footer';
 
 export default class Body extends React.Component {
 
-    
-    
+
+
 
     render() {
+
+        // work out the title - don't have page-specific titles on the homepage, only the full site-wide title
         var title = _.get(this.props, 'pageContext.frontmatter.title');
-        console.log("Title 1: " + title);
-    
+
         if (title=="Home") {
             title = _.get(this.props, 'pageContext.site.siteMetadata.title');
         } else {
             title = _.get(this.props, 'pageContext.frontmatter.title') + ' - ' + _.get(this.props, 'pageContext.site.siteMetadata.title');
         }
-        console.log("Title 2: " + title);
 
         return (
             <React.Fragment>
