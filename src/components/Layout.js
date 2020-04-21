@@ -25,7 +25,7 @@ export default class Body extends React.Component {
         return (
             <React.Fragment>
                 <Helmet>
-                    <title>{title)}</title>
+                    <title>{title}</title>
                     <meta charSet="utf-8"/>
                     <meta name="viewport" content="width=device-width, initialScale=1.0" />
                     <meta name="google" content="notranslate" />
