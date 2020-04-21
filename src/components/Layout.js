@@ -34,6 +34,7 @@ export default class Body extends React.Component {
                     <link rel="stylesheet" href={safePrefix('css/notifium.css')}/>
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" crossOrigin="anonymous" />
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossOrigin="anonymous" />
+                    <script src="https://www.notifium.com/js/ziq-inpage.js" crossOrigin="anonymous"></script>
                 </Helmet>
                 <div id="page" className={'site palette-' + _.get(this.props, 'pageContext.site.siteMetadata.palette')}>
                   <Header {...this.props} />
