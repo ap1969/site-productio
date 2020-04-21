@@ -13,7 +13,7 @@ export default class Body extends React.Component {
 
     render() {
         title = _.get(this.props, 'pageContext.frontmatter.title');
-        console.log("Title: " . title);
+        console.log("Title: " + title);
     
         if (title=="Home") {
             title = _.get(this.props, 'pageContext.site.siteMetadata.title')
