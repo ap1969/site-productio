@@ -11,6 +11,11 @@ export default {
             "validation": Rule => Rule.required()
         },
         {
+            "title": "Draft?",
+            "name": "draft",
+            "type": "boolean"
+}
+        {
             "type": "string",
             "name": "subtitle",
             "title": "Subtitle",
