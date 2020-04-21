@@ -13,14 +13,14 @@ export default class Body extends React.Component {
 
     render() {
         var title = _.get(this.props, 'pageContext.frontmatter.title');
-        console.log("Title: " + title);
+        console.log("Title 1: " + title);
     
         if (title=="Home") {
-            title = _.get(this.props, 'pageContext.site.siteMetadata.title')
+            title = _.get(this.props, 'pageContext.site.siteMetadata.title');
         } else {
-            title = _.get(this.props, 'pageContext.frontmatter.title') + ' - '}{_.get(this.props, 'pageContext.site.siteMetadata.title')
+            title = _.get(this.props, 'pageContext.frontmatter.title') + ' - ' + _.get(this.props, 'pageContext.site.siteMetadata.title');
         }
-
+        console.log("Title 2: " + title);
 
         return (
             <React.Fragment>
