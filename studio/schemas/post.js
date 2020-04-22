@@ -69,17 +69,18 @@ export default {
             "validation": Rule => Rule.required()
         },
         {
+            "title": "Slug",
+            "name": "slug",
             "type": "slug",
-            "name": "stackbit_url_path2",
-            "title": "Post URL Path2",
-            "description": "The URL path of this page relative to site root. For example, the site root page would be \"/\", and post page would be \"posts/new-post/\"",
-            "validation": Rule => Rule.required(),
-            "source": "title",
-            "slugify": input => ""
+            "options": {
+                "source": "title",
+                "maxLength": 200, // will be ignored if slugify is set
+                "slugify": input => ""
                          .concat(input)
                          .toLowerCase()
                          .replace(/\s+/g, '-')
-                         .slice(0, 200)
+                         .slice(0, 200
+            }
         },
         {
             "type": "markdown",
