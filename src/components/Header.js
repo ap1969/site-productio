@@ -8,7 +8,7 @@ export default class Header extends React.Component {
 
         
         var rightLinks = _.get(this.props, 'pageContext.site.siteMetadata.header.nav_links');
-        var centerLinks = rightLinks.pop();
+        var centerLinks = _.take(rightLinks,2);
         console.log("rightLinks", rightLinks);
         console.log("centerLinks", centerLinks);
 
