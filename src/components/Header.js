@@ -6,8 +6,10 @@ import {Link, safePrefix, classNames} from '../utils';
 export default class Header extends React.Component {
     render() {
 
-        var centerLinks = [];
+        
         var rightLinks = _.get(this.props, 'pageContext.site.siteMetadata.header.nav_links');
+        var centerLinks = rightLinks.pop();
+        console.log("rightLinks", rightLinks);
 
         return (
             <header id="masthead" className="site-header outer">
@@ -32,6 +34,15 @@ export default class Header extends React.Component {
                     <div className="site-nav-inside">
                       <button id="menu-close" className="menu-toggle"><span className="screen-reader-text">Open Menu</span><span
                           className="icon-close" aria-hidden="true" /></button>
+                      <ul className="menu">
+                        {_.map(centerLinks, (action, action_idx) => (
+                        <li key={action_idx} className={classNames('menu-item', {'current-menu-item': _.get(this.props, 'pageContext.url') === _.get(action, 'url'), 'menu-button': _.get(action, 'primary')})}>
+                          <Link to={safePrefix(_.get(action, 'url'))}
+                             {...(_.get(action, 'new_window') ? {target: '_blank', rel: 'noopener'} : null)}
+                             className={classNames({'button': _.get(action, 'primary')})}>{_.get(action, 'label')}</Link>
+                        </li>
+                        ))}
+                      </ul>
                       <ul className="menu">
                         {_.map(rightLinks, (action, action_idx) => (
                         <li key={action_idx} className={classNames('menu-item', {'current-menu-item': _.get(this.props, 'pageContext.url') === _.get(action, 'url'), 'menu-button': _.get(action, 'primary')})}>
