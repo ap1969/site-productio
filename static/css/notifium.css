@@ -11,13 +11,18 @@
   margin-left: 0;
 }
 
-
 .notifium-top-menu-center {
   float: none;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.notifium-top-menu-right {
+  position: absolute;
+  right: 5%;
+  top: 30%;
 }
 
 
