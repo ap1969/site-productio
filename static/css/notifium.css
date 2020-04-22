@@ -1,8 +1,18 @@
+/* Bullet list icons */
 .notifium-action-icon {
   padding-right: 10px;
 }
 
-.notifium-menu-centered {
+
+
+
+/* Top menu */
+.notifium-top-menu-right {
+  margin-left: 0;
+}
+
+
+.notifium-top-menu-center {
   float: none;
   position: absolute;
   top: 50%;
@@ -10,6 +20,8 @@
   transform: translate(-50%, -50%);
 }
 
+
+/* Zoho Forms */
 .formSubInfoText {
   font-size: 0.9rem
 }

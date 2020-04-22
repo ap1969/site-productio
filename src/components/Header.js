@@ -36,7 +36,7 @@ export default class Header extends React.Component {
                     <div className="site-nav-inside">
                       <button id="menu-close" className="menu-toggle"><span className="screen-reader-text">Open Menu</span><span
                           className="icon-close" aria-hidden="true" /></button>
-                      <ul className="menu notifium-menu-centered">
+                      <ul className="menu notifium-top-menu-center">
                         {_.map(centerLinks, (action, action_idx) => (
                         <li key={action_idx} className={classNames('menu-item', {'current-menu-item': _.get(this.props, 'pageContext.url') === _.get(action, 'url'), 'menu-button': _.get(action, 'primary')})}>
                           <Link to={safePrefix(_.get(action, 'url'))}
@@ -45,7 +45,7 @@ export default class Header extends React.Component {
                         </li>
                         ))}
                       </ul>
-                      <ul className="menu">
+                      <ul className="menu notifium-top-menu-right">
                         {_.map(rightLinks, (action, action_idx) => (
                         <li key={action_idx} className={classNames('menu-item', {'current-menu-item': _.get(this.props, 'pageContext.url') === _.get(action, 'url'), 'menu-button': _.get(action, 'primary')})}>
                           <Link to={safePrefix(_.get(action, 'url'))}
