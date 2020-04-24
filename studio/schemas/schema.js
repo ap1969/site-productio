@@ -14,6 +14,7 @@ import page from './page.js';
 import post from './post.js';
 import section_content from './section_content.js';
 import section_raw from './section_raw.js';
+import section_wysiwyg from './section_wysiwyg.js';
 import section_cta from './section_cta.js';
 import section_faq from './section_faq.js';
 import faq_item from './faq_item.js';
@@ -45,6 +46,7 @@ export default createSchema({
     post,
     section_content,
     section_raw,
+    section_wysiwyg,
     section_cta,
     section_faq,
     faq_item,

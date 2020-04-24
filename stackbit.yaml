@@ -158,6 +158,7 @@ models:
           models:
             - section_content
             - section_raw
+            - section_wysiwyg
             - section_cta
             - section_faq
             - section_features
@@ -255,6 +256,33 @@ models:
       - section
     fields:
       - type: markdown
+        name: content
+        label: Content
+        description: The text content of the section
+      - type: image
+        name: image
+        label: Image
+        description: The image of the section
+      - type: enum
+        name: background
+        label: Background
+        description: The background of the section
+        options:
+          - gray
+          - white
+        default: gray
+      - type: list
+        name: actions
+        label: Action Buttons
+        items:
+          type: action
+  section_wysiwyg:
+    type: object
+    label: WYSIWIG Section
+    extends:
+      - section
+    fields:
+      - type: string
         name: content
         label: Content
         description: The text content of the section
