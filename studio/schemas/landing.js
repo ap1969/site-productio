@@ -24,6 +24,9 @@ export default {
                     "type": "section_raw"
                 },
                 {
+                    "type": "section_wysiwyg"
+                },
+                {
                     "type": "section_cta"
                 },
                 {
