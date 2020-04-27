@@ -30,9 +30,11 @@ sections:
         question: Question 1
       - answer: Answer 2
         question: Question 2
+      - answer: Answer 3
+        question: Question 3
     section_id: faqs
     title: FAQs
     type: section_faq
 template: landing
-title: App User
+title: App User test
 ---

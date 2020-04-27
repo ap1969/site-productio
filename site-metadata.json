@@ -1,1 +1,73 @@
-{"footer":{"content":"&copy; Andrew Peacock. All rights reserved.","has_nav":true,"has_social":true,"has_subscribe":false,"links":[],"logo_img":null,"nav_links":[{"label":"About Us","url":"/about"},{"label":"Blog","url":"/blog"},{"label":"Beta Registration","url":"/beta-registration"},{"label":"Support","url":"https://support.notifium.com"}],"nav_title":"Company","social_links":[{"icon":"fab fa-linkedin notifium-action-icon","label":"LinkedIn","new_window":true,"url":"https://www.linkedin.com/notifium"},{"icon":"fab fa-twitter-square notifium-action-icon","label":"Twitter","new_window":true,"url":"https://twitter.com/notifium"},{"icon":"fab fa-facebook-square notifium-action-icon","label":"Facebook","url":"https://www.facebook.com/notifium"}],"social_title":"Social Media","subscribe_content":"Stay up to date with our latest developments.","subscribe_title":"Subscribe"},"header":{"has_nav":true,"logo_img":"https://cdn.sanity.io/images/rgpkjchc/production/6bef390f5bb9b335a7170826478a301070f01743-308x72.png","nav_links":[{"label":"Home","url":"/"},{"label":"Features","url":"/features"},{"label":"Beta Registration","primary":true,"url":"/beta-registration"}],"title":"Notifium.com"},"palette":"blue","title":"Notifium.com - Mobile marketing for small businesses"}
+{
+    "footer": {
+        "content": "&copy; Andrew Peacock. All rights reserved.",
+        "has_nav": true,
+        "has_social": true,
+        "has_subscribe": false,
+        "links": [],
+        "logo_img": null,
+        "nav_links": [
+            {
+                "label": "About Us",
+                "url": "/about"
+            },
+            {
+                "label": "Blog",
+                "url": "/blog"
+            },
+            {
+                "label": "Beta Registration",
+                "url": "/beta-registration"
+            },
+            {
+                "label": "Support",
+                "url": "https://support.notifium.com"
+            }
+        ],
+        "nav_title": "Company",
+        "social_links": [
+            {
+                "icon": "fab fa-linkedin notifium-action-icon",
+                "label": "LinkedIn",
+                "new_window": true,
+                "url": "https://www.linkedin.com/company/notifium"
+            },
+            {
+                "icon": "fab fa-twitter-square notifium-action-icon",
+                "label": "Twitter",
+                "new_window": true,
+                "url": "https://twitter.com/notifium"
+            },
+            {
+                "icon": "fab fa-facebook-square notifium-action-icon",
+                "label": "Facebook",
+                "url": "https://www.facebook.com/notifium"
+            }
+        ],
+        "social_title": "Social Media",
+        "subscribe_content": "Stay up to date with our latest developments.",
+        "subscribe_title": "Subscribe"
+    },
+    "header": {
+        "has_nav": true,
+        "logo_img": "https://cdn.sanity.io/images/rgpkjchc/production/6bef390f5bb9b335a7170826478a301070f01743-308x72.png",
+        "nav_links": [
+            {
+                "label": "Home",
+                "url": "/"
+            },
+            {
+                "label": "Features",
+                "url": "/features"
+            },
+            {
+                "label": "Beta Registration",
+                "primary": true,
+                "url": "/beta-registration"
+            }
+        ],
+        "title": "Notifium.com"
+    },
+    "palette": "blue",
+    "title": "Notifium.com - Mobile marketing for small businesses"
+}
