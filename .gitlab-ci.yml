@@ -20,7 +20,7 @@ production:
     - npm run build
     - firebase use --token $FIREBASE_AUTH
     - firebase target:apply hosting sitedevenvnotifiumcom sitedevenvnotifiumcom
-    - firebase deploy 
+    - firebase deploy --token $FIREBASE_AUTH
     # --debug --only hosting:sitedevenvnotifiumcom --non-interactive
     #
     # Legacy sanity webhook to stackbit https://api.stackbit.com/project/5e9e033eb9df0c001aa8cf72/webhook/sanity
