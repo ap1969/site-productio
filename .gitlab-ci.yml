@@ -1,19 +1,8 @@
-image: ruhland/ionic:1.0.9
-# Base image includes ionic CLI 5.2.3. Don't really need ionic, but it's the same image as the firebase App build.
+image: registry.gitlab.com/notifium/public_site_build:latest
+# Base image includes all the packages included in the azimuth stackbit theme, plus firebase tools
 
 stages:
   - deploy
-
-before_script:
-  - apt-get update -qy
-  - npm install -g firebase-tools
-  - npm install
-
-cache:
-  untracked: true
-  key: "$CI_PROJECT_ID"
-  paths:
-    - node_modules/
 
 production:
   stage: deploy
