@@ -24,4 +24,9 @@ production:
     # --debug --only hosting:sitedevenvnotifiumcom --non-interactive
     #
     # Legacy sanity webhook to stackbit https://api.stackbit.com/project/5e9e033eb9df0c001aa8cf72/webhook/sanity
+    # Deploy studio
+    - cd /usr/src/app/studio
+    - npm install -g sanity 
+    - sanity build
+    - sanity deploy
 
