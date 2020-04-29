@@ -14,8 +14,7 @@ production:
     #- firebase use --token $FIREBASE_AUTH
     #- firebase target:apply hosting notifium-remotedev-cp notifium-remotedev-cp
     #- firebase deploy --only hosting:sitedevenvnotifiumcom- m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" --non-interactive --token $FIREBASE_AUTH
-    - ls -al .
-    - pwd
+    - cp -r . /usr/src/app
     - cd /usr/src/app
     - ls -al
     - ls -al node_modules
