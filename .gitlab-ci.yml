@@ -22,3 +22,5 @@ production:
     - firebase target:apply hosting sitedevenvnotifiumcom sitedevenvnotifiumcom
     - firebase deploy --only hosting:sitedevenvnotifiumcom m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" --debug
     #--non-interactive
+    # Legacy sanity webhook to stackbit https://api.stackbit.com/project/5e9e033eb9df0c001aa8cf72/webhook/sanity
+
