@@ -16,9 +16,8 @@ production:
     #- firebase deploy --only hosting:sitedevenvnotifiumcom- m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" --non-interactive --token $FIREBASE_AUTH
     - cp -r . /usr/src/app
     - cd /usr/src/app
-    - ls -al
-    - ls -al node_modules
     - npx @stackbit/stackbit-pull --stackbit-pull-api-url=https://api.stackbit.com/pull/5e9e033eb9df0c001aa8cf72
     - npm run build
     - firebase use --token $FIREBASE_AUTH
-    - firebase deploy --only hosting:sitedevenvnotifiumcom m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" --non-interactive
+    - firebase deploy --only hosting:sitedevenvnotifiumcom m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" 
+    #--non-interactive
