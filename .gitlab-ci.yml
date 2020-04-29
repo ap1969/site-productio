@@ -27,6 +27,4 @@ production:
     # Deploy studio
     - cd /usr/src/app/studio
     - npm install -g @sanity/cli 
-    - sanity build
-    - sanity deploy
 
