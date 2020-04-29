@@ -15,6 +15,8 @@ production:
     #- firebase target:apply hosting notifium-remotedev-cp notifium-remotedev-cp
     #- firebase deploy --only hosting:sitedevenvnotifiumcom- m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" --non-interactive --token $FIREBASE_AUTH
     - cd /usr/src/app
+    - cd .
+    - pwd
     - ls -al
     - ls -al node_modules
     - npx @stackbit/stackbit-pull --stackbit-pull-api-url=https://api.stackbit.com/pull/5e9e033eb9df0c001aa8cf72
