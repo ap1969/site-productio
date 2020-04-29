@@ -7,6 +7,7 @@ stages:
 before_script:
   - apt-get update -qy
   - npm install -g firebase-tools
+  - npm install
 
 cache:
   untracked: true
@@ -18,9 +19,12 @@ production:
   stage: deploy
   script:
     #- export ENV=remotedev&&node ./build/scripts/buildEnv.js
-    - pwd
-    - npm install
+    #- pwd
+    #- npm install
+    #- npm run build
+    #- firebase use --token $FIREBASE_AUTH
+    #- firebase target:apply hosting notifium-remotedev-cp notifium-remotedev-cp
+    #- firebase deploy --only hosting:sitedevenvnotifiumcom- m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" --non-interactive --token $FIREBASE_AUTH
+    - npx @stackbit/stackbit-pull --stackbit-pull-api-url=https://api.stackbit.com/pull/5e9e033eb9df0c001aa8cf72
     - npm run build
-    - firebase use --token $FIREBASE_AUTH
-    - firebase target:apply hosting notifium-remotedev-cp notifium-remotedev-cp
-    - firebase deploy --only hosting:sitedevenvnotifiumcom- m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" --non-interactive --token $FIREBASE_AUTH
+    - firebase deploy --only hosting:sitedevenvnotifiumcom
