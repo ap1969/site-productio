@@ -1,3 +1,4 @@
+REM from public_site folder
 npx @stackbit/stackbit-pull --stackbit-pull-api-url=https://api.stackbit.com/pull/5e9e033eb9df0c001aa8cf72
 echo "was  gatsby build"
 npm run build
