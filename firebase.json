@@ -1,6 +1,7 @@
 {
   "hosting": {
     "public": "public",
+    "target": "sitedevenvnotifiumcom",
     "site": "sitedevenvnotifiumcom",
     "ignore": [
       "firebase.json",
