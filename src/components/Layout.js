@@ -43,6 +43,7 @@ export default class Body extends React.Component {
                   </main>
                   <Footer {...this.props} />
                 </div>
+                <script src="https://cdn.pagesense.io/js/notifium/7e3b90ff7fa44c37a83fb136376fa443.js"></script>
             </React.Fragment>
         );
     }
