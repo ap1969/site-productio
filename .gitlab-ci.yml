@@ -8,12 +8,7 @@ production:
   stage: deploy
   script:
     #- export ENV=remotedev&&node ./build/scripts/buildEnv.js
-    #- pwd
-    #- npm install
-    #- npm run build
-    #- firebase use --token $FIREBASE_AUTH
-    #- firebase target:apply hosting notifium-remotedev-cp notifium-remotedev-cp
-    #- firebase deploy --only hosting:sitedevenvnotifiumcom- m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" --non-interactive --token $FIREBASE_AUTH
+    #- npm install not required, as they are included in the registry.gitlab.com/notifium/public_site_build docker image
     - cp -r . /usr/src/app
     - cd /usr/src/app
     - npx @stackbit/stackbit-pull --stackbit-pull-api-url=https://api.stackbit.com/pull/5e9e033eb9df0c001aa8cf72
@@ -21,6 +16,7 @@ production:
     - firebase use --token $FIREBASE_AUTH
     - firebase target:apply hosting sitedevenvnotifiumcom sitedevenvnotifiumcom
     - firebase deploy --token $FIREBASE_AUTH
+    #- firebase deploy --only hosting:sitedevenvnotifiumcom- m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" --non-interactive --token $FIREBASE_AUTH
     # --debug --only hosting:sitedevenvnotifiumcom --non-interactive
     #
     # Legacy sanity webhook to stackbit https://api.stackbit.com/project/5e9e033eb9df0c001aa8cf72/webhook/sanity
